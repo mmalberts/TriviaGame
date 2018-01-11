@@ -1,0 +1,38 @@
+body {
+	background-image: url("../images/hp-trivia-background.jpg");
+}
+
+#content {
+	background-image: url("../images/parchment.jpg");
+	margin-top: 2%;
+	height: 100%;
+}
+
+#title {
+	text-align: center;
+	margin-top: 5%;
+	font-size: 75px;
+	font-family: 'Fontdiner Swanky', cursive;
+}
+
+#start-button,
+#finish {
+	font-family: 'Fontdiner Swanky', cursive;
+	font-size: 30px;
+	padding: 2%;
+	margin: 5%;
+	background: radial-gradient(#b20000, #7a0000);
+	color: #e0a800;
+	border: 2px solid #680000;
+}
+
+#main {
+	text-align: center;
+	font-family: 'Josefin Slab', serif;
+	font-size: 24px;
+}
+
+/*#game {
+	font-family: 'Josefin Slab', serif;
+	font-size: 24px;
+}*/

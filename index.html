@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>Trivia</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Josefin+Slab" rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</head>
+
+<body>
+
+	<div class="row">
+		<div class="col-md-2 empty-column"></div>
+		<div class="col-md-8" id="content">
+			<div class="row">
+				<div class="col-md-12" id="title">
+					<p>Harry Potter Trivia</p>
+					<hr>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" id="main">
+					<button id="start-button">Alohomora</button>
+
+					<form id="game">
+
+						<h5 id="countdown">Time remaining: 90 seconds</h5>
+
+						<hr>
+
+						<p class="question">Question 1: What do you destroy a horcrux with?</p>
+						<input type="radio" name="question-1" id="answer" value="incorrect"> Water
+						<input type="radio" name="question-1" id="answer" value="incorrect"> Dragon fire
+						<input type="radio" name="question-1" id="answer" value="correct"> Basilisk venom
+						<input type="radio" name="question-1" id="answer" value="incorrect"> Polyjuice potion
+
+						<hr>
+						
+						<p class="question">Question 2: Who is Harry's godfather?</p>
+						<input type="radio" name="question-2" id="answer" value="incorrect"> Remus Lupin
+						<input type="radio" name="question-2" id="answer" value="correct"> Sirius Black
+						<input type="radio" name="question-2" id="answer" value="incorrect"> Arthur Weasley
+						<input type="radio" name="question-2" id="answer" value="incorrect"> Severus Snape
+
+						<hr>
+						
+						<p class="question">Question 3: Which type of creepy crawly is Ron Weasley most afraid of?</p>
+						<input type="radio" name="question-3" id="answer" value="correct"> Spiders
+						<input type="radio" name="question-3" id="answer" value="incorrect"> Worms
+						<input type="radio" name="question-3" id="answer" value="incorrect"> Ants
+						<input type="radio" name="question-3" id="answer" value="incorrect"> Butterflies
+
+						<hr>
+						
+						<p class="question">Question 4: What breed is Hagrid's pet dragon?</p>
+						<input type="radio" name="question-4" id="answer" value="incorrect"> Hungarian Horntail
+						<input type="radio" name="question-4" id="answer" value="incorrect"> Swedish Short-Snout
+						<input type="radio" name="question-4" id="answer" value="incorrect"> Chinese Fireball
+						<input type="radio" name="question-4" id="answer" value="correct"> Norwegian Ridgeback
+
+						<hr>
+						
+						<p class="question">Question 5: What is Snape's patronus?</p>
+						<input type="radio" name="question-5" id="answer" value="incorrect"> A stag
+						<input type="radio" name="question-5" id="answer" value="correct"> A doe
+						<input type="radio" name="question-5" id="answer" value="incorrect"> An otter
+						<input type="radio" name="question-5" id="answer" value="incorrect"> A rabbit
+
+						<hr>
+						
+						<p class="question">Question 6: What is the newspaper that frequently appears in all 7 books?</p>
+						<input type="radio" name="question-6" id="answer" value="correct"> The Daily Prophet
+						<input type="radio" name="question-6" id="answer" value="incorrect"> The London Post
+						<input type="radio" name="question-6" id="answer" value="incorrect"> Witch Weekly
+						<input type="radio" name="question-6" id="answer" value="incorrect"> The Quibbler
+						
+						<hr>
+						
+						<p class="question">Question 7: In which London train station can you catch the Hogwarts Express?</p>
+						<input type="radio" name="question-7" id="answer" value="incorrect"> St. Pancras International
+						<input type="radio" name="question-7" id="answer" value="incorrect"> London Bridge Station
+						<input type="radio" name="question-7" id="answer" value="incorrect"> Paddington Station
+						<input type="radio" name="question-7" id="answer" value="correct"> King's Cross Station
+						
+						<hr>
+						
+						<p class="question">Question 8: What is the name of Hagrid's huge dog?</p>
+						<input type="radio" name="question-8" id="answer" value="incorrect"> Fluffy
+						<input type="radio" name="question-8" id="answer" value="correct"> Fang
+						<input type="radio" name="question-8" id="answer" value="incorrect"> Aragog
+						<input type="radio" name="question-8" id="answer" value="incorrect"> Buckbeak
+						
+						<hr>
+						
+						<p class="question">Question 9: Who leads the flying classes at Hogwarts?</p>
+						<input type="radio" name="question-9" id="answer" value="incorrect"> Professor McGonagall
+						<input type="radio" name="question-9" id="answer" value="incorrect"> Professor Grubbly-Plank
+						<input type="radio" name="question-9" id="answer" value="correct"> Madam Hooch
+						<input type="radio" name="question-9" id="answer" value="incorrect"> Professor Flitwick
+						
+						<hr>
+						
+						<p class="question">Question 10: What is the name of the book Hermione gives to Harry before his very first Quidditch match?</p>
+						<input type="radio" name="question-10" id="answer" value="incorrect"> Flying for Beginners
+						<input type="radio" name="question-10" id="answer" value="incorrect"> Fantastic Beasts and Where to Find Them
+						<input type="radio" name="question-10" id="answer" value="correct"> Quidditch Through the Ages
+						<input type="radio" name="question-10" id="answer" value="incorrect"> Catching Snitches for Dummies
+						
+						<hr>
+						
+						<p class="question">Question 11: What are the names of Ron's parents?</p>
+						<input type="radio" name="question-11" id="answer" value="incorrect"> Bill and Fleur
+						<input type="radio" name="question-11" id="answer" value="incorrect"> James and Lily
+						<input type="radio" name="question-11" id="answer" value="incorrect"> Lucius and Narcissa
+						<input type="radio" name="question-11" id="answer" value="correct"> Arthur and Molly
+						
+						<hr>
+						
+						<p class="question">Question 12: Who takes over as Defence Against the Dark Arts teacher in 'Chamber of Secrets'?</p>
+						<input type="radio" name="question-12" id="answer" value="correct"> Gilderoy Lockhart
+						<input type="radio" name="question-12" id="answer" value="incorrect"> Mad-Eye Moody
+						<input type="radio" name="question-12" id="answer" value="incorrect"> Dolores Umbridge
+						<input type="radio" name="question-12" id="answer" value="incorrect"> Severus Snape
+						
+						<hr>
+						
+						<p class="question">Question 13: What is the term used to describe someone who can speak to snakes?</p>
+						<input type="radio" name="question-13" id="answer" value="incorrect"> Muggle
+						<input type="radio" name="question-13" id="answer" value="correct"> Parselmouth
+						<input type="radio" name="question-13" id="answer" value="incorrect"> Animagus
+						<input type="radio" name="question-13" id="answer" value="incorrect"> Warlock
+						
+						<hr>
+						
+						<p class="question">Question 14: What is the name of Dumbledore's Phoenix?</p>
+						<input type="radio" name="question-14" id="answer" value="incorrect"> Dr. Bird
+						<input type="radio" name="question-14" id="answer" value="incorrect"> Dumbledore Jr.
+						<input type="radio" name="question-14" id="answer" value="incorrect"> Sandra
+						<input type="radio" name="question-14" id="answer" value="correct"> Fawkes
+						
+						<hr>
+						
+						<p class="question">Question 15: What saves Harry's life after he is poisoned by the basilisk fang?</p>
+						<input type="radio" name="question-15" id="answer" value="correct"> Phoenix tears
+						<input type="radio" name="question-15" id="answer" value="incorrect"> Veritaserum
+						<input type="radio" name="question-15" id="answer" value="incorrect"> Pumpkin juice
+						<input type="radio" name="question-15" id="answer" value="incorrect"> Chocolate
+						
+						<hr>
+						
+						<p class="question">Question 16: Scabbers was who in his Animagus form?</p>
+						<input type="radio" name="question-16" id="answer" value="incorrect"> Remus Lupin
+						<input type="radio" name="question-16" id="answer" value="incorrect"> Sirius Black
+						<input type="radio" name="question-16" id="answer" value="incorrect"> James Potter
+						<input type="radio" name="question-16" id="answer" value="correct"> Peter Pettigrew
+						
+						<hr>
+						
+						<p class="question">Question 17: What enchanted artifact chooses the most worthy entrants who submit their names for the Triwizard Tournament?</p>
+						<input type="radio" name="question-17" id="answer" value="correct"> The Goblet of Fire
+						<input type="radio" name="question-17" id="answer" value="incorrect"> The Elder Wand
+						<input type="radio" name="question-17" id="answer" value="incorrect"> The Sword of Gryffindor
+						<input type="radio" name="question-17" id="answer" value="incorrect"> The Sorting Hat
+						
+						<hr>
+						
+						<p class="question">Question 18: Who is with Harry when he is attacked by Dementors on Privet Drive?</p>
+						<input type="radio" name="question-18" id="answer" value="incorrect"> Ron Weasley
+						<input type="radio" name="question-18" id="answer" value="incorrect"> Uncle Vernon
+						<input type="radio" name="question-18" id="answer" value="correct"> Dudley Dursley
+						<input type="radio" name="question-18" id="answer" value="incorrect"> Colin Creevey
+						
+						<hr>
+						
+						<p class="question">Question 19: In Harry's dream, what does he see attacking Ron's father?</p>
+						<input type="radio" name="question-19" id="answer" value="incorrect"> A phoenix
+						<input type="radio" name="question-19" id="answer" value="correct"> A snake
+						<input type="radio" name="question-19" id="answer" value="incorrect"> A dragon
+						<input type="radio" name="question-19" id="answer" value="incorrect"> Lord Voldemort
+
+						<hr>
+						
+						<p class="question">Question 20: To whom did Sybill Trelawney tell the prophecy about 'the coming of a boy' who would be powerful enough to vanquish Lord Voldemort?</p>
+						<input type="radio" name="question-20" id="answer" value="correct"> Albus Dumbledore
+						<input type="radio" name="question-20" id="answer" value="incorrect"> Severus Snape
+						<input type="radio" name="question-20" id="answer" value="incorrect"> Bellatrix LeStrange
+						<input type="radio" name="question-20" id="answer" value="incorrect"> Harry Potter
+
+						<hr>
+
+						<button id="finish">Finish</button>
+
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="col-md-2 empty-column"></div>
+
+	</div>
+	
+</body>
+
+</html>
