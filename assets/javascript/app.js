@@ -6,7 +6,7 @@ $(document).ready(function() {
 var correct = 0;
 var incorrect = 0;
 var unanswered = 0;
-var timeLeft = 90;
+var timeLeft = 120;
 var intervalId;
 
 function decrement() {
